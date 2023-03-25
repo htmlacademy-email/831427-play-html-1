@@ -297,6 +297,11 @@
       mso-style-priority: 100 !important;
       text-decoration: none !important;
     }
+
+    body {
+        webkit-text-size-adjust: 100% !important;
+        -ms-text-size-adjust: 100% !important;
+      }
   </style>
 </head>
 
@@ -310,7 +315,11 @@
   				<v:fill type="tile" color="#F6F6F6;;"></v:fill>
   			</v:background>
 		  <![endif]-->
-
+    <!-- div для preheader -->
+    <div
+      style="opacity:0;color:transparent;line-height:0;font-size:0px;overflow:hidden;border-width:0;display:none!important">
+      Приглашаем Вас на бесплатный вебинар «Тренды Frontend-разработки
+      2020».</div>
     <!-- Основная таблица -->
     <table class="content-wrapper" width="100%" cellspacing="0" cellpadding="0" border="0">
       <tr>
@@ -325,12 +334,12 @@
                   style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-spacing:0px;background-color:#F6F6F6;;width:568px;">
                   <tr>
                     <td class="mobile-content-p22b" align="center" bgcolor="#F6F6F6;"
-                      style="Margin:0;padding-top:24px;padding-bottom:16px;background-color:#F6F6F6;">
+                      style="Margin:0;padding-top:24px;padding-bottom:16px;background-color:#F6F6F6;font-size:11px;font-family:'trebuchet ms', tahoma, sans-serif;line-height:13px;color:#141414;">
                       <p class="grey"
                         style="Margin:0;padding:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:11px;font-family:'trebuchet ms', tahoma, sans-serif;line-height:13px;color:#141414;">
                         Если вы&nbsp;не&nbsp;видите данное письмо, перейдите&nbsp;по&nbsp;<a class="grey"
                           style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'trebuchet ms', tahoma, sans-serif;font-size:11px;text-decoration:none;color:#13D6C3;"
-                          target="_blank" href="#">ссылке</a></p>
+                          target="_blank" href="#" title="Web-версия письма">ссылке</a></p>
                     </td>
                   </tr>
                 </table>
@@ -345,7 +354,7 @@
                           <td class="mobile-content-p26t" align="center"
                             style="Margin:0;padding-top:32px;padding-bottom:16px;font-size:0px;">
                             <a href="https://htmlacademy.ru/" target="_blank"
-                              style="font-size: 14px; text-decoration: none; color: #000000;">
+                              style="font-size: 14px; text-decoration: none; color: #000000;" title="Логотип">
                               <img
                                 src="https://raw.githubusercontent.com/NadezxdaNikolaeva/831427-play-html-1/module4-task1/1-invitation/img/invitation-logo-opt.png"
                                 alt="Логотип PlayHTML" width="140" height="24"
@@ -379,7 +388,8 @@
                                     style="Margin:0;padding-left:45px;padding-right:47px;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:24px;font-family:'trebuchet ms', tahoma, sans-serif;line-height:28px;color:#FF4B33;font-weight:700;">
                                     Приглашаем Вас на&nbsp;бесплатный вебинар <a class="mobile-social"
                                       style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'trebuchet ms', tahoma, sans-serif;font-size:24px;text-decoration:none;color:#FF4B33;font-weight:700;"
-                                      href="https://htmlacademy.ru/vebinar/about/" target="_blank">&laquo;Тренды
+                                      href="https://htmlacademy.ru/vebinar/about/" target="_blank"
+                                      title="Регистрация на вебинар">&laquo;Тренды
                                       Frontend-разработки
                                       <br />2020&raquo;</a></p>
                                 </td>
@@ -445,8 +455,8 @@
                                         <span class="button-border buttom-date"
                                           style="border-style:solid;border-color:#ffb500;background:#ffb500;border-width:0px;display:inline-block;border-radius:5px;width:auto;"><a
                                             style="mso-style-priority:100 !important;text-decoration:none;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'trebuchet ms', tahoma, sans-serif;font-size:18px;color:#ffffff;border-style:solid;border-color:#ffb500;border-width:8px 16px;display:inline-block;background:#ffb500;border-radius:5px;font-weight:400;font-style:normal;line-height:21px;width:auto;text-align:center;"
-                                            href="https://htmlacademy.ru/vebinar/about/"
-                                            target="_blank">На&nbsp;вебинар</a></span>
+                                            href="https://htmlacademy.ru/vebinar/about/" target="_blank"
+                                            title="Кнопка регистрации на вебинар">На&nbsp;вебинар</a></span>
                                       </td>
                                     </tr>
                                   </table>
@@ -462,10 +472,12 @@
                                     style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-spacing:0px;">
                                     <tr>
                                       <td align="center" style="padding:0;Margin:0;background-color: #ffffff;">
-                                        <img class="adaptive-img"
-                                          src="https://raw.githubusercontent.com/NadezxdaNikolaeva/831427-play-html-1/module4-task1/1-invitation/img/invitation-calendar-opt.jpg"
-                                          alt="Регистрация на вебинар" width="352" height="286"
-                                          style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic" />
+                                        <a href="https://htmlacademy.ru/vebinar/about/" target="_blank"
+                                          title="Регистрация на вебинар"><img class="adaptive-img"
+                                            src="https://raw.githubusercontent.com/NadezxdaNikolaeva/831427-play-html-1/module4-task1/1-invitation/img/invitation-calendar-opt.jpg"
+                                            alt="Регистрация на вебинар" width="352" height="286"
+                                            style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic" />
+                                        </a>
                                       </td>
                                     </tr>
                                   </table>
@@ -515,10 +527,10 @@
                                   <table width="100%" cellspacing="0" cellpadding="0" border="0">
                                     <tr>
                                       <td class="mobile-content-p16b" style="Margin:0;padding:0;width:12px;">
-                                        <img
-                                          src="https://raw.githubusercontent.com/NadezxdaNikolaeva/831427-play-html-1/module4-task1/1-invitation/img/invitation-ellipse-opt.png"
-                                          alt="Иконка 1" title="Иконка 1" width="12" height="12"
-                                          style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic" />
+                                        <a href="#" target="_blank" title="Иконка 1"><img
+                                            src="https://raw.githubusercontent.com/NadezxdaNikolaeva/831427-play-html-1/module4-task1/1-invitation/img/invitation-ellipse-opt.png"
+                                            alt="Иконка 1" title="Иконка 1" width="12" height="12"
+                                            style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic" /></a>
                                       </td>
                                       <td class="mobile-content-p19l" style="padding-left: 13px;">
                                         <p class="mobile-blue-first"
@@ -535,10 +547,10 @@
                                   <table width="100%" cellspacing="0" cellpadding="0" border="0">
                                     <tr>
                                       <td class="mobile-content-p19b" style="Margin:0;padding:0;width:12px;">
-                                        <img
-                                          src="https://raw.githubusercontent.com/NadezxdaNikolaeva/831427-play-html-1/module4-task1/1-invitation/img/invitation-polygon-opt.png"
-                                          alt="Иконка 2" title="Иконка 2" width="12" height="9"
-                                          style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic" />
+                                        <a href="#" target="_blank" title="Иконка 2"><img
+                                            src="https://raw.githubusercontent.com/NadezxdaNikolaeva/831427-play-html-1/module4-task1/1-invitation/img/invitation-polygon-opt.png"
+                                            alt="Иконка 2" title="Иконка 2" width="12" height="9"
+                                            style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic" /></a>
                                       </td>
                                       <td class="mobile-content-p22l" style="padding-left: 13px;">
                                         <p class="mobile-blue"
@@ -555,10 +567,10 @@
                                   <table width="100%" cellspacing="0" cellpadding="0" border="0">
                                     <tr>
                                       <td class="mobile-content-p40b" style="Margin:0;padding:0;width:12px;">
-                                        <img
-                                          src="https://raw.githubusercontent.com/NadezxdaNikolaeva/831427-play-html-1/module4-task1/1-invitation/img/invitation-rectangle-opt.png"
-                                          alt="Иконка 3" title="Иконка 3" width="12" height="12"
-                                          style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic" />
+                                        <a href="#" target="_blank" title="Иконка 3"><img
+                                            src="https://raw.githubusercontent.com/NadezxdaNikolaeva/831427-play-html-1/module4-task1/1-invitation/img/invitation-rectangle-opt.png"
+                                            alt="Иконка 3" title="Иконка 3" width="12" height="12"
+                                            style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic" /></a>
                                       </td>
                                       <td class="mobile-content-p21l" style="padding-left: 12px;">
                                         <p class="mobile-blue"
@@ -595,10 +607,10 @@
                               </tr>
                               <tr>
                                 <td align="center" style="Margin:0;padding:0;padding-bottom:12px;width:88px;">
-                                  <img
-                                    src="https://raw.githubusercontent.com/NadezxdaNikolaeva/831427-play-html-1/module4-task1/1-invitation/img/invitation-portrait-opt.jpg"
-                                    alt="Фотография спикера" width="88" height="88"
-                                    style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic" />
+                                  <a href="#" target="_blank" title="Фотография спикера"><img
+                                      src="https://raw.githubusercontent.com/NadezxdaNikolaeva/831427-play-html-1/module4-task1/1-invitation/img/invitation-portrait-opt.jpg"
+                                      alt="Фотография спикера" width="88" height="88"
+                                      style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic" /></a>
                                 </td>
                               </tr>
                               <tr>
@@ -622,7 +634,8 @@
                                   <span class="button-border mobile-buttom"
                                     style="border-style:solid;border-color:#ff4b33;background:#ff4b33;border-width:0px;display:inline-block;border-radius:5px;width:auto;"><a
                                       style="mso-style-priority:100 !important;text-decoration:none;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'trebuchet ms', tahoma, sans-serif;font-size:18px;color:#ffffff;border-style:solid;border-color:#ff4b33;border-width:8px 16px;display:inline-block;background:#ff4b33;border-radius:5px;font-weight:400;font-style:normal;line-height:21px;width:auto;text-align:center;"
-                                      href="https://htmlacademy.ru/vebinar/about/" target="_blank">Зарегистрироваться
+                                      href="https://htmlacademy.ru/vebinar/about/" target="_blank"
+                                      title="Кнопка регистрации на вебинар">Зарегистрироваться
                                       на&nbsp;вебинар</a></span>
                                 </td>
                               </tr>
@@ -647,10 +660,10 @@
                                 <td
                                   class="mobile-content-p17r mobile-content-p17l mobile-content-p0t mobile-content-p0b"
                                   align="center" style="Margin:0;padding:0;padding-top:16px;padding-bottom:16px;">
-                                  <img class="adaptive-img"
-                                    src="https://raw.githubusercontent.com/NadezxdaNikolaeva/831427-play-html-1/module4-task1/1-invitation/img/invitation-proposal-opt.jpg"
-                                    alt="Рисунок" width="278" height="278"
-                                    style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic" />
+                                  <a href="#" target="_blank" title="Фотография спикера"><img class="adaptive-img"
+                                      src="https://raw.githubusercontent.com/NadezxdaNikolaeva/831427-play-html-1/module4-task1/1-invitation/img/invitation-proposal-opt.jpg"
+                                      alt="Рисунок" width="278" height="278"
+                                      style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic" /></a>
                                 </td>
                               </tr>
                               <tr>
@@ -666,8 +679,8 @@
                                   <span class="button-border buttom-prize"
                                     style="border-style:solid;border-color:#ff4b33;background:#ff4b33;border-width:0px;display:inline-block;border-radius:5px;width:auto;"><a
                                       style="mso-style-priority:100 !important;text-decoration:none;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'trebuchet ms', tahoma, sans-serif;font-size:18px;color:#ffffff;border-style:solid;border-color:#ff4b33;border-width:8px 16px;display:inline-block;background:#ff4b33;border-radius:5px;font-weight:400;font-style:normal;line-height:21px;width:auto;text-align:center;"
-                                      href="https://htmlacademy.ru/vebinar/about/"
-                                      target="_blank">Зарегистрироваться</a></span>
+                                      href="https://htmlacademy.ru/vebinar/about/" target="_blank"
+                                      title="Кнопка регистрации на вебинар">Зарегистрироваться</a></span>
                                 </td>
                               </tr>
                               <tr>
@@ -718,31 +731,31 @@
                                         <table cellpadding="0" cellspacing="0" style="border-spacing:0px;">
                                           <tr>
                                             <td style="Margin:0;padding:0;padding-right:8px; font-size:0;"><a
-                                                href="https://ru-ru.facebook.com/" target="_blank"><img
+                                                href="https://ru-ru.facebook.com/" target="_blank" title="Facebook"><img
                                                   src="https://raw.githubusercontent.com/NadezxdaNikolaeva/831427-play-html-1/module4-task1/1-invitation/img/invitation-facebook-opt.png"
                                                   alt="Facebook" title="Facebook" width="24" height="24"
                                                   style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic" /></a>
                                             </td>
                                             <td style="Margin:0;padding:0;padding-right:8px;font-size:0;"><a
-                                                href="https://www.instagram.com/" target="_blank"><img
+                                                href="https://www.instagram.com/" target="_blank" title="Instagram"><img
                                                   src="https://raw.githubusercontent.com/NadezxdaNikolaeva/831427-play-html-1/module4-task1/1-invitation/img/invitation-instagram-opt.png"
                                                   alt="Instagram" title="Instagram" width="24" height="24"
                                                   style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic" /></a>
                                             </td>
                                             <td style="Margin:0;padding:0;padding-right:8px;font-size:0;"><a
-                                                href="https://www.youtube.com/" target="_blank"><img
+                                                href="https://www.youtube.com/" target="_blank" title="Youtube"><img
                                                   src="https://raw.githubusercontent.com/NadezxdaNikolaeva/831427-play-html-1/module4-task1/1-invitation/img/invitation-youtube-opt.png"
                                                   alt="Youtube" title="Youtube" width="24" height="24"
                                                   style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic" /></a>
                                             </td>
                                             <td style="Margin:0;padding:0;padding-right:8px;font-size:0;"><a
-                                                href="https://web.telegram.org/" target="_blank"><img
+                                                href="https://web.telegram.org/" target="_blank" title="Telegram"><img
                                                   src="https://raw.githubusercontent.com/NadezxdaNikolaeva/831427-play-html-1/module4-task1/1-invitation/img/invitation-telegram-opt.png"
                                                   alt="Telegram" title="Telegram" width="24" height="24"
                                                   style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic" /></a>
                                             </td>
                                             <td style="Margin:0;padding:0;font-size:0;"><a href="https://vk.com/"
-                                                target="_blank"><img
+                                                target="_blank" title="VK"><img
                                                   src="https://raw.githubusercontent.com/NadezxdaNikolaeva/831427-play-html-1/module4-task1/1-invitation/img/invitation-vk-opt.png"
                                                   alt="VK" title="VK" width="24" height="24"
                                                   style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic" /></a>
@@ -765,7 +778,8 @@
                                         style="Margin:0;padding:0px;padding-bottom:8px;line-height:16px;">
                                         <p style="Margin:0;"><a class="mobile-contacts"
                                             style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'trebuchet ms', tahoma, sans-serif;font-size:14px;text-decoration:none;color:#13d6c3;"
-                                            href="mailto:study@htmlacademy.ru" target="_blank">study@htmlacademy.ru</a>
+                                            href="mailto:study@htmlacademy.ru" target="_blank"
+                                            title="study@htmlacademy.ru">study@htmlacademy.ru</a>
                                         </p>
                                       </td>
                                     </tr>
@@ -774,7 +788,8 @@
                                         style="Margin:0;padding:0px;padding-bottom:0px;line-height:16px;">
                                         <p style="Margin:0;"><a class="mobile-contacts"
                                             style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'trebuchet ms', tahoma, sans-serif;font-size:14px;text-decoration:none;color:#13d6c3;"
-                                            href="tel:88006907668" target="_blank">8-800-690-76-68</a></p>
+                                            href="tel:88006907668" target="_blank"
+                                            title="8-800-690-76-68">8-800-690-76-68</a></p>
                                       </td>
                                     </tr>
                                   </table>
@@ -798,7 +813,8 @@
                                 <td style="padding:0;padding-bottom:8px;Margin:0;line-height:16px;">
                                   <p style="Margin:0;"><a class="mobile-contacts"
                                       style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'trebuchet ms', tahoma, sans-serif;line-height:16px;font-size:14px;text-decoration:underline;color:#141414;"
-                                      href="https://htmlacademy.ru/" target="_blank">Бесплатные
+                                      href="https://htmlacademy.ru/" target="_blank"
+                                      title="Бесплатные вебинары">Бесплатные
                                       вебинары</a></p>
                                 </td>
                               </tr>
@@ -806,7 +822,8 @@
                                 <td style="padding:0;padding-bottom:8px;Margin:0;line-height:16px;">
                                   <p style="Margin:0;"><a class="mobile-contacts"
                                       style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'trebuchet ms', tahoma, sans-serif;line-height:16px;font-size:14px;text-decoration:underline;color:#141414;"
-                                      href="https://htmlacademy.ru/" target="_blank">Обучающие курсы</a>
+                                      href="https://htmlacademy.ru/" target="_blank" title="Обучающие курсы">Обучающие
+                                      курсы</a>
                                   </p>
                                 </td>
                               </tr>
@@ -814,21 +831,22 @@
                                 <td style="padding:0;padding-bottom:8px;Margin:0;line-height:16px;">
                                   <p style="Margin:0;"><a class="mobile-contacts"
                                       style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'trebuchet ms', tahoma, sans-serif;line-height:16px;font-size:14px;text-decoration:underline;color:#141414;"
-                                      href="https://htmlacademy.ru/" target="_blank">Тесты</a></p>
+                                      href="https://htmlacademy.ru/" target="_blank" title="Тесты">Тесты</a></p>
                                 </td>
                               </tr>
                               <tr>
                                 <td style="padding:0;padding-bottom:8px;Margin:0;line-height:16px;">
                                   <p style="Margin:0;"><a class="mobile-contacts"
                                       style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'trebuchet ms', tahoma, sans-serif;line-height:16px;font-size:14px;text-decoration:underline;color:#141414;"
-                                      href="https://htmlacademy.ru/" target="_blank">Наш блог</a></p>
+                                      href="https://htmlacademy.ru/" target="_blank" title="Наш блог">Наш блог</a></p>
                                 </td>
                               </tr>
                               <tr>
                                 <td>
                                   <p style="Margin:0;line-height:16px;"><a class="mobile-contacts"
                                       style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'trebuchet ms', tahoma, sans-serif;line-height:16px;font-size:14px;text-decoration:underline;color:#141414;"
-                                      href="https://htmlacademy.ru/" target="_blank">Истории студентов</a>
+                                      href="https://htmlacademy.ru/" target="_blank" title="Истории студентов">Истории
+                                      студентов</a>
                                   </p>
                                 </td>
                               </tr>
@@ -861,9 +879,11 @@
                                     Если вы&nbsp;не&nbsp;хотите
                                     получать рассылку, вы&nbsp;можете <a class="grey"
                                       style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'trebuchet ms', tahoma, sans-serif;font-size:11px;text-decoration:underline;color:#828282;"
-                                      href="#" target="_blank">отписаться</a> или <a class="grey"
+                                      href="#" target="_blank" title="Отписаться от рассылки">отписаться</a> или <a
+                                      class="grey"
                                       style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'trebuchet ms', tahoma, sans-serif;font-size:11px;text-decoration:underline;color:#828282;"
-                                      href="#" target="_blank">настроить параметры</a>.</p>
+                                      href="#" target="_blank" title="Настроить параметры подписки">настроить
+                                      параметры</a>.</p>
                                 </td>
                               </tr>
                               <tr>
@@ -874,7 +894,7 @@
                                     Если письмо отображается некорректно или вы&nbsp;хотите им&nbsp;поделиться, <a
                                       class="grey"
                                       style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'trebuchet ms', tahoma, sans-serif;font-size:11px;text-decoration:underline;color:#828282;"
-                                      href="#" target="_blank">жмите сюда</a>.</p>
+                                      href="#" target="_blank" title="Web-версия письма">жмите сюда</a>.</p>
                                 </td>
                               </tr>
                             </table>
